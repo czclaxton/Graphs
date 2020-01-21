@@ -38,7 +38,8 @@ class Graph:
         Print each vertex in breadth-first order
         beginning from starting_vertex.
         """
-        pass  # TODO
+        # queue = Queue()
+        pass
 
     def dft(self, starting_vertex):
         """
@@ -62,7 +63,12 @@ class Graph:
         starting_vertex to destination_vertex in
         breath-first order.
         """
-        pass  # TODO
+        # queue = Queue()
+        # queue.enqueue(starting_vertex)
+        # visited = set()
+
+        # while queue.size() > 0:
+        pass
 
     def dfs(self, starting_vertex, destination_vertex):
         """
