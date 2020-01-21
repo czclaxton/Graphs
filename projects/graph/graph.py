@@ -39,6 +39,14 @@ class Graph:
         beginning from starting_vertex.
         """
         # queue = Queue()
+        # queue.enqueue(starting_vertex)
+        # visited = set()
+
+        # while queue.size() > 0:
+        #     v = queue.dequeue()
+
+        #     if v not in visited:
+        #         visited.add(v)
         pass
 
     def dft(self, starting_vertex):
