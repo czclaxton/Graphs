@@ -158,7 +158,8 @@ class Graph:
             path = []
 
         visited.add(starting_vertex)
-        path = path + [starting_vertex]
+        # path = path + [starting_vertex]
+        path.extend(starting_vertex)
 
         if starting_vertex == destination_vertex:
             return path
