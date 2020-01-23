@@ -14,8 +14,8 @@ def earliest_ancestor(ancestors, starting_node):
 
     check_num = ''
 
-    print(graph.vertices)
-    print(f'STARTING NODE {starting_node}')
+    # print(graph.vertices)
+    # print(f'STARTING NODE {starting_node}')
     check_arr = []
     children = []
     for i in graph.vertices:
@@ -24,14 +24,16 @@ def earliest_ancestor(ancestors, starting_node):
                 check_num = graph.vertices[i].pop()
 
                 check_arr.append((check_num, i))
+                # print(f'CHECK_NUM = {check_num}')
                 children.append(check_num)
+                # print(f'CHECK_ARR = {check_arr}')
 
-    print(check_arr)
+    # print(check_arr)
     for i in check_arr:
         if i[0] == starting_node:
-            print(f'found it at {i[1]} and it does equal {starting_node}')
+            # print(f'found it at {i[1]} and it does equal {starting_node}')
             if i[1] in children:
-                print(f'pass in {i[1]}')
+                # print(f'pass in {i[1]}')
                 return earliest_ancestor(ancestors, i[1])
             else:
                 return i[1]
